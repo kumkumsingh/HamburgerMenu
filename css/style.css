@@ -1,7 +1,7 @@
 :root{
-    --primary-color:rgba(59, 173, 207, 0.6);
+    --primary-color:rgba(59, 173, 207, 0);
     --secondary-color:rgba(229, 148, 0, 0.9);
-    --overlay_color:rgba(24, 39, 51, 0.85);
+    --overlay-color:rgba(24, 39, 51, 0.85);
     --menu-speed:0.75s;
 }
 * {
@@ -14,7 +14,7 @@ body{
     line-height: 1.4;
 }
 .container{
-    max-width: 960px;
+    max-width: 1500px;
     margin: auto;
     overflow: hidden;
     padding: 0 3rem;
@@ -28,7 +28,7 @@ body{
 }
 #showcase:before{
     content:'';
-    background: url('../img/beach.jpg') no-repeat center center/cover;
+    background: url('../img/background1.jpg') no-repeat center center/cover;
     position: absolute;
     top:0;
     left:0;
