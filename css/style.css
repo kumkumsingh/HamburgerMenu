@@ -54,10 +54,13 @@ body{
 .btn{
     display: inline-block;
     text-decoration: none;
-    padding:0.75rem 1.5rem;
-    background:var(--primary-color) ;
-    color:#fff;
-    margin-top: 1rem;
+    padding:0.90rem 2rem;
+    border: solid 2px black;
+    border-radius: 30px;
+    background:rgb(0, 217, 255) ;
+    font-size: 1.3rem;
+    color:black;
+    margin-top: 15.5rem;
     transition:opacity 1s ease-out;
 }
 .btn:hover{
