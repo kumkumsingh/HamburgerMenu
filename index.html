@@ -6,6 +6,12 @@
     <title>Hamburger Menu</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <script type="text/javascript">
+      function openTab(th)
+      {
+          window.open(th.name,'_blank');
+      }
+  </script>
 </head>
 <body>
   <div class="menu-wrap">
@@ -16,7 +22,7 @@
         <div><ul>
         <li><a href="">Home</a></li>
         <li><a href="">Projects</a></li>
-        <li><a href="">Resume</a></li>
+        <li><a onClick="openTab(this)" href="#" name="Kumkum_Singh_Junior_Full_stack_developer.pdf">Resume</a></li>
         <li><a href="">Contact</a></li>
     </ul></div></div>
      </div>
@@ -28,7 +34,7 @@
                 background in IT , reinventing my self with new technologies, 
                 looking for a full-stack developer role in an organization to utilize my technical 
                 skills for the growth of the organization as well as to enhance my knowledge in recent technologies.</p>
-                 <a href="" class="btn">My Resume</a>
+                <a onClick="openTab(this)" href="#" name="Kumkum_Singh_Junior_Full_stack_developer.pdf" class="btn">My Resume</a>
         </div>
     </header>
   </div>
