@@ -66,3 +66,23 @@ function openResume(th)
 {
     window.open(th.name,'_blank');
 }
+
+//close modal form for about me 
+// function closeModal(){
+//     const popup = document.querySelector(".popup");
+//     console.log('popup',popup)
+//     popup.style.display="none";
+    // const closeModal = document.getElementsByClassName("closeBtn");
+    // console.log("closemodal", closeModal)
+    // closeModal.addEventListener("click" , e =>{
+    //     const popup = document.getElementsByClassName("popup");
+    //     popup.style.display="none";
+    // })
+
+// }
+
+ const closeModal = document.querySelector(".closeBtn");
+    closeModal.addEventListener("click" , e =>{
+        const popup = document.querySelector(".popup");
+        popup.style.display="none";
+    })

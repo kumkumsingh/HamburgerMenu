@@ -21,7 +21,7 @@
           <a href="https://github.com/kumkumsingh/"><i class="fab fa-github"></i></a>
       </li>
       <li>
-          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href="https://twitter.com/kumkum59631968"><i class="fab fa-twitter"></i></a>
       </li>
       <li>
           <a href="https://www.linkedin.com/in/kumkumsingh/"><i class="fab fa-linkedin"></i></a>
@@ -29,16 +29,16 @@
   </ul>
   </div>
   <div class="menu-wrap">
-      <input type="checkbox" class="toggler">
+      <input type="checkbox" class="toggler" id="#checkbox">
       <div class="hamburger"><div></div></div>
       <div class="menu">
         <div>
         <div><ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#home" class="link">Home</a></li>
+        <li><a href="#aboutMe" class="link">About Me</a></li>
+        <li><a href="#projects" class="link">Projects</a></li>
         <li><a onClick="openResume(this)" href="#" name="Kumkum_Singh_Junior_Full_stack_developer.pdf">Resume</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="link">Contact</a></li>
     </ul></div></div>
      </div>
   </div>
@@ -46,8 +46,10 @@
         <div class="container showcase-container">
           <h1>
             Kumkum Singh The
+          </h1>
+          <h1>
             <span class="txt-type" data-wait="3000" data-words='["Developer","Designer" , "Creator" ,"Team Player"]' ></span>
-        </h1>
+          </h1>
         <h2>
             Welcome To My Portfolio
         </h2>
@@ -56,8 +58,60 @@
     </header>
   </div>
 </section>
-<section id="aboutMe">About me </section>
-<section id="projects">My Projects</section>
+<section id="aboutMe">
+  <div class="main">
+  <!-- <img src="img/kumkum.jpeg" alt=""> -->
+  <h1>About me</h1>
+  <p>Enthusiastic, proactive, fast learner developer with some background in IT ,
+    reinventing my self with new technologies, looking for a junior web developer role
+    in an organization to utilize my technical skills for the growth of the organization as
+    well as to enhance my knowledge in recent technologies.</p>
+    <button class="readMoreBtn" >Read More <i class= "fas fa-angle-double-right"></i></a>
+  </div>
+  <div class="popup">
+    <div class="aboutMePopUp">
+      <img src="./img/close-icon-vector-23190083.jpg" alt="close-icon" class="closeBtn">
+      <h1>My Professional Story</h1>
+      <div class="verticalAlign">
+      <img src="img/kumkum.jpeg" class="profileImg"></img>
+      <div>Enthusiastic, proactive, fast learner developer with some background in IT ,
+        reinventing my self with new technologies, looking for a junior web developer role
+        in an organization to utilize my technical skills for the growth of the organization as
+        well as to enhance my knowledge in recent technologies.</div>
+        <div class="verticalLine"></div>
+        <div>Enthusiastic, proactive, fast learner developer with some background in IT ,
+          reinventing my self with new technologies, looking for a junior web developer role
+          in an organization to utilize my technical skills for the growth of the organization as
+          well as to enhance my knowledge in recent technologies.</div>
+        </div>
+    </div>
+  </div>
+
+</section>
+<section id="projects">
+  <div>
+  <h2>Projects</h2>
+</div>
+
+</section>
 <script src="main.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script>
+$('.link').on('click',function(event){
+  if(this.hash !== ''){
+      event.preventDefault();
+      document.querySelector(".toggler").checked=false;
+      const hash = this.hash;
+      $('html , body').animate({
+          scrollTop: $(hash).offset().top
+      },800
+      );
+  }
+
+});
+</script>
 </body>
 </html>
