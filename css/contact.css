@@ -1,0 +1,77 @@
+
+.outerContainer{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.container{
+    /* background: black; */
+    background:url('/img/Eiffel.jpeg') no-repeat center;
+    background-position: center;
+    background-size: cover;
+    /* height: 61.5vh;
+    max-width: 60vw; */
+    height: 60%;
+    width: 60%;
+    position: relative;
+    /* display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column; */
+    margin: 0 auto;  
+    z-index: 1;  
+
+}
+.container::before{
+    content:'';
+    position: absolute;
+    right: 50%;
+    height: 100%;
+    width: 50%;
+    /* right:60%;
+    width:80%;
+    height:70%; */
+    /* background-color: rgb(255, 255 , 255); */
+    background-color: rgba(255, 255 , 255 , 0.2);
+    /* transform: rotate(180deg) scale(1.5) skew(5deg) translateY(3px); */
+    z-index: -1;
+}
+.formContainer{
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column; 
+    margin-left: 6rem;
+}
+.inputTxt , .submitBtn{
+    text-align: center;
+    text-transform: uppercase;
+    color:blue;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    padding:5px;
+    width:200px;
+    background: center;
+    background-color:white;
+}
+.formContainer > label{
+    color: blanchedalmond;
+    font-size: 30px;
+    margin: 10px;
+}
+.submitBtn{
+    width:210px;
+}
+h2{
+    color: blanchedalmond;
+    text-transform: uppercase;
+}
+/* .outerContainer > h2{             
+    transform: translateX(-195%);
+} */
