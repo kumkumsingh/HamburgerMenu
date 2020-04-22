@@ -220,11 +220,6 @@ flex-direction: column;
 
 }
 .panels figure.back{
-    transform: rotateY(90deg);
-
-}
-.panels figure.front{
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,6 +227,12 @@ flex-direction: column;
     background-color: rgb(0, 217, 255);
     width:400px;
     height: 530.5px;
+    transform: rotateY(90deg);
+
+}
+.panels figure.front{
+    position: absolute;
+   
 }
 .panels li:hover figure.front{
     animation: twirl 0.2s ease-in forwards;
@@ -304,7 +305,3 @@ flex-direction: column;
     border-bottom: solid 2px white;
     height: 17rem;
 }
-
- 
-
-
