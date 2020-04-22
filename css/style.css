@@ -198,66 +198,111 @@ h1{
     height: 100vh;
 }
 .projectsMain{
-
+width:100%;
+height:100vh;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 }
 /* flipping card  */
-.flipCardContainer{
-    width:100%;
-    height:100vh;
+.panels{
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
+   
+    list-style-type: none;
 }
-.card-container{
-    width:400px;
-    height: 580px;
-  
+.panels li{
+    position: relative;
+    margin:10px;
 
 }
-.card{
-    width:100%;
-    height: 100%;
-    /* background-color: aqua; */
-    transition: transform 4s ease-in-out;
-    transform-style: preserve-3d;
-}
-.card-container:hover .card{
-    transform: rotateY(180deg)
+.panels figure.back{
+    transform: rotateY(90deg);
 
 }
-.card figure{
-    width:100%;
-    height: 100%;
+.panels figure.front{
     position: absolute;
-    margin:0;
-    border: 1px solid grey;
-    
-}
-.card .front{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(0, 217, 255);
-
-}
-.card .back{
-    transform: rotateY(180deg);
-}
-.imgStyle{
     width:400px;
-    height:400px;
+    height: 530.5px;
+}
+.panels li:hover figure.front{
+    animation: twirl 0.2s ease-in forwards;
+}
+.panels li:hover figure.back{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+}
+@keyframes twirl{
+    0%{ transform: rotateY(0deg);
+        
+    }
+    100% {
+        transform: rotateY(90deg);     
+    }
+} 
+.flipImg{
+
+    width:24.8rem;
+    height:20rem;
+    filter: grayscale(100%);
+   
+}
+.innerImg1{
+   background: url('../img/Dog.jpg') center center;
+}
+.innerImg2{
+    background: url('../img/Puzzle.jpg') center center;
+}
+.innerImg3{
+    background: url('../img/Recipe.jpg') center center;  
+}
+.upperContent{
+
+    width:24.8rem;
+    height:16rem;
+    filter: grayscale(100%);
+    position: relative;
+}
+.innerText{
+    background: grey;
+    color: black;
+    position: absolute;
+    font-size: 2rem;
+    top:12rem;
+    left: 16rem;
 }
 .openInWebBtn{
     border-radius: 30px;
     border: 1px solid grey;
     padding: 10px 10px;
     background-color: white;
+}
+.flipBtn{
+    display: inline-block;
+    text-decoration: none;
+    padding:0.90rem 2rem;
+    border: solid 2px black;
+    border-radius: 30px;
+    background:white ;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color:black; 
+}
+.backText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: grey;
+    border-bottom: solid 2px white;
+    height: 17rem;
 }
 
  
