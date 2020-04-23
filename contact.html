@@ -10,14 +10,16 @@
 <div class="outerContainer">
     <h2>Get In Touch</h2>
 <div class="container">
-    <form action="post" class="formContainer">
+    <form action="mailto:kumkumsingh.r@gmail.com" method="POST" encType="text/plain"class="formContainer">
      <label class=".name">Name</label>
-     <input class="inputTxt"></input> 
+     <input class="inputTxt" type="text" name="name"></input> 
      <label class=".email">Email</label>
-     <input class="inputTxt"></input> 
+     <input class="inputTxt" type="text" name="mail"></input> 
      <label class=".message">Message</label>
-     <textarea class="inputTxt"></textarea> 
-     <button class="submitBtn">Submit</div>
+     <textarea class="inputTxt" type="text" name="comment"></textarea> 
+     <input type="submit" class="submitBtn" value="Send">
+     <input type="reset" class="submitBtn" value="Reset">
+     <!-- <button class="submitBtn">Submit</div> -->
     </form>
 
 </div> 
