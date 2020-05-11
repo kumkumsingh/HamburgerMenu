@@ -1,75 +1,152 @@
-
-.outerContainer{
+body{
+    color:rgb(0, 217, 255);
+}
+.container{
     height: 100vh;
     width: 100vw;
-    background: black;
+    background:white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
- 
+    position: relative;
 }
-.container{
-    /* background: black; */
-    background:url('/img/Eiffel.jpeg') no-repeat center;
+/* .flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+.formContainer{
+    /* height: 100%; */
+    width: 60%;
+    position: absolute;
+    top:0;
+    border:  1px solid rgb(10, 4, 4); 
+
+    background-color:rgb(24, 24, 23);
+    /* background-color: linear-gradient(to top,rgba(34,32,41,1) , rgba(34,32,41,0.8)); */
+    /* box-shadow: 4px 4px 4px 4px #888888; */
+}
+.imageContainer{
+    height: 200px;
+    width: 100%;
+    background:url('/img/building.jpg') no-repeat center;
     background-position: center;
     background-size: cover;
-    /* height: 61.5vh;
-    max-width: 60vw; */
-    height: 70%;
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
     position: relative;
-    /* display: flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-direction: column; */
-    margin: 0 auto;  
-    z-index: 1;  
+    z-index: 1;
+   
+}
+.imageContainer::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:black;
+    top:0;
+    opacity:0.5;
+    z-index: -1;
 
 }
-.container::before{
-    content:'';
-    position: absolute;
-    right: 50%;
-    height: 100%;
-    width: 50%;
-    /* right:60%;
-    width:80%;
-    height:70%; */
-    /* background-color: rgb(255, 255 , 255); */
-    background-color: rgba(255, 255 , 255 , 0.2);
-    /* transform: rotate(180deg) scale(1.5) skew(5deg) translateY(3px); */
-    z-index: -1;
-}
-.formContainer{
-    display: flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-direction: column; 
-    margin-left: 6rem;
-}
-.inputTxt , .submitBtn{
+.imageContainer > h1 {
     text-align: center;
+    color: whi;
+}
+.formContentContainer{
+    position: relative;
+    /* border:  1px solid whitesmoke; */
+    /* height: 60%; */
+    width: 60%;
+    transform: translateX(33%);
+    /* padding-left:3rem; */
+}
+.content{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.content > div > label{
+    font-size: 2rem; 
+    color: rgb(0, 217, 255);
+    text-align: right;
+    display: inline-block;
+    width: 200px;   
+}
+.content > div{
+    margin:1rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.content > div > .inputTxt{
+    font-size: 1rem;
+    border-radius: 5px;
+    padding:0.3rem;
+    width:80%;
+    height: 2rem;
+    margin-left: 10px;
+}
+.textareaContent{
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 80%;
+    height: 4rem;
+    margin-left: 10px;
+ }
+.content > label{
     font-size: 1.5rem;
+    text-align: right;
+    display: inline-block;
+}
+ .submitBtn{
+    text-align: center;
+    font-size: 1rem;
     border-radius: 5px;
     margin: 1rem;
-    padding:0.5rem;
-    width:25%;
+    padding:1rem;
+    width:8rem;
     background: center;
-    background-color:white;
-}
-.formContainer > label{
-    color: blanchedalmond;
-    font-size: 1.5rem;
-    margin: 10px;
-}
-.submitBtn{
-    width:27%;
-}
-h2{
-    color: blanchedalmond;
+    background-color:rgb(0, 217, 255);
     text-transform: uppercase;
-}
-/* .outerContainer > h2{             
-    transform: translateX(-195%);
-} */
+    color:black;
+} 
+
+@media only screen and (max-width:600px) {
+    body {
+     margin: 0px;
+    }
+    .formContainer , .imageContainer , .formContentContainer{
+        width: 100%;
+    }
+    .formContentContainer{
+        transform: translateX(0%); 
+    }
+    .content > div{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    .content > div > label{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    input[type='reset']{
+        display: none;
+    }
+    .content > * div{
+        font-size: 1rem;
+    }
+
+ }
+
+  

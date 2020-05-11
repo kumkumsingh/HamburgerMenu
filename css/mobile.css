@@ -1,6 +1,6 @@
-#home .socialLinks {
+/* #home .socialLinks {
   display: none;
-}
+} */
 .readMoreBtn{
     display: none;
 }
@@ -15,17 +15,17 @@ h2 {
 #projects .projectsMain .panels > *:last-child {
   display: none;
 }
-.menu-wrap {
+ .menu-wrap {
   top: 5%;
   right: 10%;
-}
+} 
 /* @media screen and (max-width: 1025px) and (min-width: 601px){
     .menu-wrap {
         top: 3%;
         right: 10%;
       } 
 } */
-@media only screen and (max-width: 600px) and (min-width: 319px) {
+@media only screen and (max-width: 1025px) and (min-width: 320px) {
   .main {
     width: 100%;
   }
