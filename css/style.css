@@ -30,7 +30,7 @@ h1{
 
 }
 .container{
-    width: 100vw;
+    width: 100%;
     margin: auto;
     overflow: hidden;
     padding: 0 3rem;
@@ -40,7 +40,6 @@ h1{
     color:#fff;
     height: 100vh;
     position: relative;
-
 }
 #showcase:before{
     content:'';
@@ -110,7 +109,8 @@ h1{
     margin-top:0;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    overflow: hidden;  
 }
 
 .popup {
@@ -150,7 +150,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-   padding: .8rem;
+    padding: .8rem;
 }
 .profileImg{
     height: 15rem;
@@ -193,9 +193,10 @@ h1{
 #projects{
     background: url('../img/background3.jpeg') no-repeat center center;
     /* background: black; */
-    max-width: 1500px;
+    max-width: 100vw;
     background-size: cover;
     height: 100vh;
+    display: flex;
 }
 .projectsMain{
 width:100%;
@@ -334,4 +335,8 @@ flex-direction: column;
 }
 .moreBtn:hover{
     background-position: right;
+}
+#header{
+    display: flex;
+
 }

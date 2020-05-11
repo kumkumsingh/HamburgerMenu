@@ -16,13 +16,14 @@
     flex-wrap: wrap;
 } */
 .formContainer{
-    height: 100%;
-    width: 80%;
+    /* height: 100%; */
+    width: 60%;
     position: absolute;
     top:0;
+    /* box-shadow: 4px 4px 4px 4px #888888; */
 }
 .imageContainer{
-    height: 30%;
+    height: 200px;
     width: 60%;
     background:url('/img/building.jpeg') no-repeat center;
     background-position: center;
@@ -54,6 +55,7 @@
     /* height: 60%; */
     width: 60%;
     transform: translateX(33%);
+   
     /* padding-left:3rem; */
 }
 .content{
@@ -77,9 +79,6 @@
     /* flex-wrap: wrap; */
 }
 .content > div > .inputTxt{
-
-    text-align: center;
-    display: inline-block;
     font-size: 1rem;
     border-radius: 5px;
     padding:0.3rem;
@@ -88,8 +87,6 @@
     margin-left: 10px;
 }
 .textareaContent{
-    text-align: center;
-    display: inline-block;
     font-size: 1rem;
     border-radius: 5px;
     padding: 0.3rem;
